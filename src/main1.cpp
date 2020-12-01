@@ -8,10 +8,12 @@ int main() {
 	
 	using namespace std;
 	using namespace structures;
-
-	NoTrie* root = init();
 	
+	string word;
+	NoTrie* root = init();
+	cin >> word;
 	cout << "inicializou" << endl;
-
+	insert(root, word, 0, 3);
+	cout << "inseriu" << endl;
 	return (0);
 }

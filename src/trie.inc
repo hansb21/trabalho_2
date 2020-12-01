@@ -1,3 +1,4 @@
+#include <iostream>
 
 struct NoTrie* init() 
 {
@@ -21,10 +22,11 @@ void insert(struct NoTrie* root, std::string key, unsigned long pos, unsigned lo
 		int idx = key[i] - 'a';
 		if (!aux->filhos[idx])
 			aux->filhos[idx] = init();
-
+		
 		aux = aux->filhos[idx];
 	}
 
 	aux->pos = pos;
 	aux->size = size;
+	std::cout << key << " inserida com sucesso" << std::endl;
 }
