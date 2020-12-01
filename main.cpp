@@ -1,4 +1,9 @@
+
+#include <fstream>
 #include <iostream>
+#include <string>
+
+#include "trie.h"
 
 int main() {
     
@@ -9,8 +14,6 @@ int main() {
 
     cin >> filename;  // entrada
 
-    cout << filename << endl;  // esta linha deve ser removida
-    
     while (1) {  // leitura das palavras ate' encontrar "0"
         cin >> word;
         if (word.compare("0") == 0) {
