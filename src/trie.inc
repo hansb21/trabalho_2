@@ -28,7 +28,6 @@ void insert(struct NoTrie* root, std::string key, unsigned long pos, unsigned lo
 
 	aux->pos = pos;
 	aux->size = size;
-	std::cout << key << " inserida com sucesso" << std::endl;
 }
 
 
