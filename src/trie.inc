@@ -17,7 +17,7 @@ void insert(struct NoTrie* root, std::string key, unsigned long pos, unsigned lo
 {
 	auto aux = root;
 	
-	for (int i = 0; i < key.length(); i++)
+	for (auto i = 0u; i < key.length(); i++)
 	{
 		int idx = key[i] - 'a';
 		if (!aux->filhos[idx])
@@ -29,4 +29,37 @@ void insert(struct NoTrie* root, std::string key, unsigned long pos, unsigned lo
 	aux->pos = pos;
 	aux->size = size;
 	std::cout << key << " inserida com sucesso" << std::endl;
+}
+
+
+//! retorna o Nó do último caracter de uma string ou a própria raiz
+NoTrie* find(struct NoTrie* root, std::string key) 
+{
+	auto aux = root;
+
+	for (auto i = 0u; i < key.length(); i++) {
+		int idx = key[i] - 'a';
+		
+		if (!aux->filhos[idx]) {
+			// caso a string não esteja na árvore
+			return init();
+		}
+		aux = aux->filhos[idx];
+	}
+	return aux;
+}
+
+int countSufixes(struct NoTrie* root) {
+	int sufixes = 0;
+
+	if (root->size > 0) {
+		sufixes++;
+	}
+
+	for (int i = 0; i < 26; i++) {
+		if (root->filhos[i]){
+			sufixes += countSufixes(root->filhos[i]);
+		}
+	}
+	return sufixes;
 }
