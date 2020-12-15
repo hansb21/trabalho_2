@@ -1,0 +1,121 @@
+\hypertarget{trie_8inc}{}\doxysection{Referência ao ficheiro trie.\+inc}
+\label{trie_8inc}\index{trie.inc@{trie.inc}}
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+struct No\+Trie $\ast$ \mbox{\hyperlink{trie_8inc_a3562409277b6597a5ab94ce09b74f319}{init}} ()
+\begin{DoxyCompactList}\small\item\em Cria um No\+Trie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{trie_8inc_a55315c5ac63079adb9179a4e7b0c0bf7}{insert}} (struct No\+Trie $\ast$root, std\+::string key, unsigned long pos, unsigned long size)
+\begin{DoxyCompactList}\small\item\em Insere valores em uma Trie. \end{DoxyCompactList}\item 
+No\+Trie $\ast$ \mbox{\hyperlink{trie_8inc_a1df99c90de7dde2a2124963f7a5a21d7}{find}} (struct No\+Trie $\ast$root, std\+::string key)
+\begin{DoxyCompactList}\small\item\em encontra o último nó de uma palavra de uma Trie. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{trie_8inc_a55584568cd7b64ebd3aeb3aa89bc2b42}{count\+Sufixes}} (struct No\+Trie $\ast$root)
+\begin{DoxyCompactList}\small\item\em Conta os sufixos de um nó. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{trie_8inc_a55584568cd7b64ebd3aeb3aa89bc2b42}\label{trie_8inc_a55584568cd7b64ebd3aeb3aa89bc2b42}} 
+\index{trie.inc@{trie.inc}!countSufixes@{countSufixes}}
+\index{countSufixes@{countSufixes}!trie.inc@{trie.inc}}
+\doxysubsubsection{\texorpdfstring{countSufixes()}{countSufixes()}}
+{\footnotesize\ttfamily int count\+Sufixes (\begin{DoxyParamCaption}\item[{struct No\+Trie $\ast$}]{root }\end{DoxyParamCaption})}
+
+
+
+Conta os sufixos de um nó. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em No\+Trie} & raiz da trie.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Quantidade de sufixos de uma palavra no dicionário. 
+\end{DoxyReturn}
+
+
+Definido na linha 78 do ficheiro trie.\+inc.
+
+
+
+Referenciado por output\+Results().
+
+\mbox{\Hypertarget{trie_8inc_a1df99c90de7dde2a2124963f7a5a21d7}\label{trie_8inc_a1df99c90de7dde2a2124963f7a5a21d7}} 
+\index{trie.inc@{trie.inc}!find@{find}}
+\index{find@{find}!trie.inc@{trie.inc}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily No\+Trie$\ast$ find (\begin{DoxyParamCaption}\item[{struct No\+Trie $\ast$}]{root,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})}
+
+
+
+encontra o último nó de uma palavra de uma Trie. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em No\+Trie} & raiz da trie \\
+\hline
+{\em string} & palavra\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+nó desejado 
+\end{DoxyReturn}
+
+
+Definido na linha 55 do ficheiro trie.\+inc.
+
+
+
+Referenciado por main().
+
+\mbox{\Hypertarget{trie_8inc_a3562409277b6597a5ab94ce09b74f319}\label{trie_8inc_a3562409277b6597a5ab94ce09b74f319}} 
+\index{trie.inc@{trie.inc}!init@{init}}
+\index{init@{init}!trie.inc@{trie.inc}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily struct No\+Trie$\ast$ init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria um No\+Trie. 
+
+\begin{DoxyReturn}{Retorna}
+Nó inicializado. 
+\end{DoxyReturn}
+
+
+Definido na linha 8 do ficheiro trie.\+inc.
+
+
+
+Referenciado por find(), insert() e parse\+Dict().
+
+\mbox{\Hypertarget{trie_8inc_a55315c5ac63079adb9179a4e7b0c0bf7}\label{trie_8inc_a55315c5ac63079adb9179a4e7b0c0bf7}} 
+\index{trie.inc@{trie.inc}!insert@{insert}}
+\index{insert@{insert}!trie.inc@{trie.inc}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void insert (\begin{DoxyParamCaption}\item[{struct No\+Trie $\ast$}]{root,  }\item[{std\+::string}]{key,  }\item[{unsigned long}]{pos,  }\item[{unsigned long}]{size }\end{DoxyParamCaption})}
+
+
+
+Insere valores em uma Trie. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em No\+Trie} & raiz da trie \\
+\hline
+{\em string} & palavra \\
+\hline
+{\em long} & posição no dicionário \\
+\hline
+{\em long} & tamanho da linha \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha 30 do ficheiro trie.\+inc.
+
+
+
+Referenciado por parse\+Dict().
+

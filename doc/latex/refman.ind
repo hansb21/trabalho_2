@@ -1,0 +1,79 @@
+\begin{theindex}
+
+  \item {countSufixes}
+    \subitem {trie.inc}, \hyperpage{16}
+
+  \indexspace
+
+  \item {dic.h}, \hyperpage{13}
+    \subitem {nextPos}, \hyperpage{14}
+    \subitem {parseDict}, \hyperpage{13}
+
+  \indexspace
+
+  \item {filhos}
+    \subitem {structures::NoTrie}, \hyperpage{11}
+  \item {find}
+    \subitem {trie.inc}, \hyperpage{16}
+
+  \indexspace
+
+  \item {init}
+    \subitem {trie.inc}, \hyperpage{17}
+  \item {initi}
+    \subitem {structures}, \hyperpage{9}
+  \item {insert}
+    \subitem {structures}, \hyperpage{9}
+    \subitem {trie.inc}, \hyperpage{17}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{14}
+  \item {main.cpp}, \hyperpage{14}
+    \subitem {main}, \hyperpage{14}
+    \subitem {outputResults}, \hyperpage{15}
+
+  \indexspace
+
+  \item {nextPos}
+    \subitem {dic.h}, \hyperpage{14}
+
+  \indexspace
+
+  \item {outputResults}
+    \subitem {main.cpp}, \hyperpage{15}
+
+  \indexspace
+
+  \item {parseDict}
+    \subitem {dic.h}, \hyperpage{13}
+  \item {pos}
+    \subitem {structures::NoTrie}, \hyperpage{11}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{15}
+
+  \indexspace
+
+  \item {size}
+    \subitem {structures::NoTrie}, \hyperpage{11}
+  \item {structures}, \hyperpage{9}
+    \subitem {initi}, \hyperpage{9}
+    \subitem {insert}, \hyperpage{9}
+  \item {structures::NoTrie}, \hyperpage{11}
+    \subitem {filhos}, \hyperpage{11}
+    \subitem {pos}, \hyperpage{11}
+    \subitem {size}, \hyperpage{11}
+
+  \indexspace
+
+  \item {trie.h}, \hyperpage{15}
+  \item {trie.inc}, \hyperpage{16}
+    \subitem {countSufixes}, \hyperpage{16}
+    \subitem {find}, \hyperpage{16}
+    \subitem {init}, \hyperpage{17}
+    \subitem {insert}, \hyperpage{17}
+
+\end{theindex}
