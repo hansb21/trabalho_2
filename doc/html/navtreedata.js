@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Projeto II - relatório", "index.html", [
-    [ "Trabalho 2 de Estrutura de Dados", "index.html", null ],
+    [ "Trabalho de Implementação II - Identificação de prefixos e Indexação de dicionários", "index.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Lista de namespaces", "namespaces.html", "namespaces_dup" ],
       [ "Membros do namespace", "namespacemembers.html", [
