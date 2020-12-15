@@ -5,8 +5,15 @@ using namespace structures;
 
 int nextPos = 0;
 
+
+/**
+ * @brief Gera uma Trie a partir de um arquivo de dicionário.
+ * 
+ * @param string Caminho para o arquivoo 
+ * 
+ * @return Nó raiz da trie gerada pelo arquivo
+ */
 NoTrie* parseDict(std::string filename) {
-	
 	NoTrie* root = init();
 	string line;
 	ifstream file(filename);

@@ -6,6 +6,12 @@
 #include "trie.h"
 #include "dic.h"
 
+/**
+ * @brief Printa a resposta correspondente ao nó e à palavra buscada.
+ * 
+ * @param NoTrie nó correspondente a palavra buscada
+*  @param string palavra buscada
+ */
 void outputResults(structures::NoTrie* node, std::string word) {
     int sufixes = structures::countSufixes(node);
     int pos = node->pos;
@@ -22,6 +28,12 @@ void outputResults(structures::NoTrie* node, std::string word) {
     }
 }
 
+/**
+ * @brief Executa o programa, e lê as entradas.
+ * 
+ * @return 0 se o programa funcionar;
+ * @return 1 se não foi possível abrir o arquivo;
+ */
 int main() {
     
     using namespace std;

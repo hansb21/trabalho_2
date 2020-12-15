@@ -1,5 +1,10 @@
 #include <iostream>
 
+/**
+ * @brief Cria um NoTrie.
+ * 
+ * @return Nó inicializado.
+ */
 struct NoTrie* init() 
 {
 	auto Nnode = new NoTrie;
@@ -13,6 +18,15 @@ struct NoTrie* init()
 	return Nnode;
 }
 
+
+/**
+ * @brief Insere valores em uma Trie.
+ * 
+ * @param NoTrie raiz da trie
+ * @param string palavra 
+ * @param long posição no dicionário
+ * @param long tamanho da linha
+ */
 void insert(struct NoTrie* root, std::string key, unsigned long pos, unsigned long size)
 {
 	auto aux = root;
@@ -30,8 +44,14 @@ void insert(struct NoTrie* root, std::string key, unsigned long pos, unsigned lo
 	aux->size = size;
 }
 
-
-//! retorna o Nó do último caracter de uma string ou a própria raiz
+/**
+ * @brief encontra o último nó de uma palavra de uma Trie.
+ * 
+ * @param NoTrie raiz da trie 
+ * @param string palavra
+ *
+ * @return nó desejado 
+ */
 NoTrie* find(struct NoTrie* root, std::string key) 
 {
 	auto aux = root;
@@ -48,6 +68,13 @@ NoTrie* find(struct NoTrie* root, std::string key)
 	return aux;
 }
 
+/**
+ * @brief Conta os sufixos de um nó.
+ * 
+ * @param NoTrie raiz da trie.
+ *
+ * @return Quantidade de sufixos de uma palavra no dicionário.
+ */
 int countSufixes(struct NoTrie* root) {
 	int sufixes = 0;
 

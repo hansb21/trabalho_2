@@ -2,6 +2,8 @@
 #ifndef TRIE_STRUCT_H
 #define TRIE_STRUCT_H
 
+
+//! Nó de uma Trie 
 namespace structures {
 
 	struct NoTrie {
